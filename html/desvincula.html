@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Desvincular Produtos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="warning-box">
+      <img src="icons/atencao.png" alt="Aviso" class="warning-icon">
+      <p class="warning-text">Funcionalidade em fase de testes, cuidado ao utilizar!</p>
+    </div>
+  </header>
+  <main>
+    <section class="instructions">
+      <ol>
+        <li>✅ Marque os produtos que deseja desvincular.</li>
+        <li>⤵️ Selecione a loja a ser desvinculada.</li>
+      </ol>
+    </section>
+    <div class="center-content">
+      <select id="lojasVinculadas" aria-label="Selecione uma loja">
+        <option value="">Selecione uma loja</option>
+      </select>
+    </div>
+    <section class="instructions">
+      <ol start="3">
+        <li>💾 Gere um backup dos dados antes de iniciar a desvinculação.</li>
+      </ol>
+    </section>
+    <div class="center-content">
+      <button id="gerarBackup" class="button-products" aria-label="Gerar Backup">Gerar Backup</button>
+    </div>
+    <section class="instructions">
+      <ol start="4">
+        <li>⛓️‍💥 Após gerar backup inicie o processo de desvinculação.</li>
+      </ol>
+    </section>
+    <div class="center-content">
+      <button id="desvincular" class="button-products" aria-label="Desvincular">Desvincular</button>
+    </div>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* Ensure the icon is styled correctly */
+h1 img {
+  display: inline-block;
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Adjust the size as needed */
+  margin-left: 5px; /* Adjust the margin as needed */
+  vertical-align: middle;
+}
+
+.copy-icon {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.copy-icon.copied {
+    background-color: #4CAF50; /* Verde para indicar sucesso */
+    transform: scale(1.2); /* Aumenta o ícone para dar um efeito de click */
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request de Produtos Amazon</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="amazonText">
+    <img id="amazonLogo" class="logo_amazon" src="icons/amazon.png" alt="Amazon Logo">
+    <p>Para enviar o <strong>request</strong> que atualiza a lista de produtos a serem <strong>importados</strong>, siga os passos:</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="instructions">
+      <ol>
+        <li>Acesse <strong>"Central de Extensões > Minhas Instalações > Amazon > Autenticação"</strong></li>
+        <li>Clique em <strong>"Obter informações"</strong> para carregar os ID necessários</li>
+        <li>Com os IDs preenchidos clique em <strong>"Enviar Requisição"</strong></li>
+      </ol>
+    </section>
+
+    <section>
+      <table>
+        <tr>
+          <th class="tabelaAmazon">ID Loja</th>
+          <td id="idLoja"></td>
+        </tr>
+        <tr>
+          <th class="tabelaAmazon">ID Empresa</th>
+          <td id="idEmpresa"></td>
+        </tr>
+        <tr>
+          <th class="tabelaAmazon">ID Integração</th>
+          <td id="idIntegracao"></td>
+        </tr>
+      </table>
+    </section>
+
+    <div class="button-section">
+      <button id="infoButton" class="amazonButton" aria-label="Obter informações">Obter informações</button>
+      <button id="sendRequestButton" class="amazonButton" disabled aria-label="Enviar requisição">Enviar requisição</button>
+    </div>
+
+    <div id="warning" role="alert"></div>
+  </main>
+
+  <script src="scripts/requestAmazon.js"></script>
+</body>
+</html>

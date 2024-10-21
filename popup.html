@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Popup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="icons/logo.png" alt="Company Logo" class="logo">
+        <img src="icons/settings.png" alt="Settings" class="settings-icon" id="settings-icon">
+    </header>
+
+    <section>
+        <select id="functionality-select">
+            <option value="func1">Consulta de IDs Mercado Livre</option>
+            <option value="func2">Request de Produtos Amazon</option>
+            <option value="func3">Desvinculação de Produtos</option>
+        </select>
+    </section>
+
+    <div id="content-area">
+        <!-- Conteúdo dinâmico será carregado aqui -->
+    </div>
+
+    <div id="preferences-area" class="hidden">
+        <h2>Preferências</h2>
+        <form id="preferences-form">
+            <!-- Parâmetros configuráveis -->
+            <label>
+                <input type="checkbox" name="param1" id="toggleIcon">
+                Ativar ícone
+            </label>
+            <br><br>
+            <label>
+                <input type="checkbox" name="param2" id="param2">
+                Parâmetro 2
+            </label>
+            <br><br>
+            <button type="saveButton">Salvar</button>
+        </form>
+        <p id="confirmation-message" class="hidden">Preferências salvas com sucesso!</p>
+    </div>
+        <script src="popup.js"></script>
+</body>
+</html>

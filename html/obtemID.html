@@ -1,0 +1,38 @@
+<header>
+    <div class="mercadoText">
+    <img id="mercadoLogo" class="logo_amazon" src="icons/mercado.png" alt="Mercado Logo">
+    <p><strong>Ferramenta para obter IDs de anúncios</strong><br>Clique em <strong>"Copiar"</strong> e cole os dados numa planilha</p>
+    </div>
+  </header>
+
+<div id="header">
+    <div class="input-container">
+        <input type="text" id="productId" placeholder="Insira o código MLB">
+    </div>
+    <button id="fetchData" class="customButton">Buscar ID</button>
+    <button id="copyData" class="customButton">Copiar</button>
+    <button id="clearData" class="customButton">Limpar</button>
+</div>
+
+
+<!-- Área para exibir mensagens de erro ou sucesso -->
+<div id="messageBox"></div>
+
+<div id="productInfo">
+    <div id="productThumbnail">
+        <img id="thumbnailImage" src="icons/placeholder.png" alt="Product Image">
+    </div>
+    <div id="productDetails">
+        <h3 id="productTitle">Título do Anúncio</h3>
+        <p id="productCode">ID do Produto</p>
+    </div>
+</div>
+<table id="variationsTable">
+    <thead>
+        <tr>
+            <th>Atributos</th>
+            <th>ID Variação</th>
+        </tr>
+    </thead>
+    <tbody id="variationsBody"></tbody>
+</table>
